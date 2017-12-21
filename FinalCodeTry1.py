@@ -421,4 +421,35 @@ d. 12"""
 answer60 = 'b'
 
 
+room1 = {'northriddle' : riddle45, 'southriddle' : riddle56, 'westriddle' : riddle50, 'eastriddle' : riddle51}
+room2 = {'northriddle' : riddle46, 'southriddle' : riddle57, 'westriddle' : riddle51, 'eastriddle' : riddle52}
+room3 = {'northriddle' : riddle47, 'southriddle' : riddle58, 'westriddle' : riddle52, 'eastriddle' : riddle53}
+room4 = {'northriddle' : riddle48, 'southriddle' : riddle59, 'westriddle' : riddle53, 'eastriddle' : riddle54}
+room5 = {'northriddle' : riddle49, 'southriddle' : riddle60, 'westriddle' : riddle54, 'eastriddle' : riddle55}
+room6 = {'northriddle' : riddle34, 'southriddle' : riddle45, 'westriddle' : riddle39, 'eastriddle' : riddle40}
+room7 = {'northriddle' : riddle35, 'southriddle' : riddle46, 'westriddle' : riddle40, 'eastriddle' : riddle41}
+room8 = {'northriddle' : riddle36, 'southriddle' : riddle47, 'westriddle' : riddle41, 'eastriddle' : riddle42}
+room9 = {'northriddle' : riddle37, 'southriddle' : riddle48, 'westriddle' : riddle42, 'eastriddle' : riddle43}
+room10 = {'northriddle' : riddle38, 'southriddle' : riddle49, 'westriddle' : riddle43, 'eastriddle' : riddle44}
+room11 = {'northriddle' : riddle23, 'southriddle' : riddle34, 'westriddle' : riddle28, 'eastriddle' : riddle29}
+room12 = {'northriddle' : riddle24, 'southriddle' : riddle35, 'westriddle' : riddle29, 'eastriddle' : riddle30}
+room13 = {'northriddle' : riddle25, 'southriddle' : riddle36, 'westriddle' : riddle30, 'eastriddle' : riddle31}
+room14 = {'northriddle' : riddle26, 'southriddle' : riddle37, 'westriddle' : riddle31, 'eastriddle' : riddle32}
+room15 = {'northriddle' : riddle27, 'southriddle' : riddle38, 'westriddle' : riddle32, 'eastriddle' : riddle33}
+room16 = {'northriddle' : riddle12, 'southriddle' : riddle23, 'westriddle' : riddle17, 'eastriddle' : riddle18}
+room17 = {'northriddle' : riddle13, 'southriddle' : riddle24, 'westriddle' : riddle18, 'eastriddle' : riddle19}
+room18 = {'northriddle' : riddle14, 'southriddle' : riddle25, 'westriddle' : riddle19, 'eastriddle' : riddle20}
+room19 = {'northriddle' : riddle15, 'southriddle' : riddle26, 'westriddle' : riddle20, 'eastriddle' : riddle21}
+room20 = {'northriddle' : riddle16, 'southriddle' : riddle27, 'westriddle' : riddle21, 'eastriddle' : riddle22}
+room21 = {'northriddle' : riddle1, 'southriddle' : riddle12, 'westriddle' : riddle6, 'eastriddle' : riddle7}
+room22 = {'northriddle' : riddle2, 'southriddle' : riddle13, 'westriddle' : riddle7, 'eastriddle' : riddle8}
+room23 = {'northriddle' : riddle3, 'southriddle' : riddle14, 'westriddle' : riddle8, 'eastriddle' : riddle9}
+room24 = {'northriddle' : riddle4, 'southriddle' : riddle15, 'westriddle' : riddle9, 'eastriddle' : riddle10}
+room25 = {'northriddle' : riddle5, 'southriddle' : riddle16, 'westriddle' : riddle10, 'eastriddle' : riddle11}
+
+
+
+
+
+
 
