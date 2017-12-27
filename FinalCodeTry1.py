@@ -1,3 +1,4 @@
+#riddles and answers
 riddle1 = """Which of the following is the same as the expression sin(x-y)cosy + cos(x-y)siny?
 a. 1
 b. sinx
@@ -399,7 +400,7 @@ c. 30
 d. 40"""
 answer57 = 'd'
 
-riddle58 = """What is the largest number of solid 2 in. by 2 in. by 1 in. blocks that can fit in a 3 in. by 2 in.  by 3 in. box?
+riddle58 = """What is the largest number of solid 2 in. by 2 in. by 1 in. blocks that can fit in a 3 in. by 2 in. by 3 in. box?
 a. 3
 b. 4
 c. 5
@@ -421,31 +422,193 @@ d. 12"""
 answer60 = 'b'
 
 
-room1 = {'northriddle' : riddle45, 'southriddle' : riddle56, 'westriddle' : riddle50, 'eastriddle' : riddle51}
-room2 = {'northriddle' : riddle46, 'southriddle' : riddle57, 'westriddle' : riddle51, 'eastriddle' : riddle52}
-room3 = {'northriddle' : riddle47, 'southriddle' : riddle58, 'westriddle' : riddle52, 'eastriddle' : riddle53}
-room4 = {'northriddle' : riddle48, 'southriddle' : riddle59, 'westriddle' : riddle53, 'eastriddle' : riddle54}
-room5 = {'northriddle' : riddle49, 'southriddle' : riddle60, 'westriddle' : riddle54, 'eastriddle' : riddle55}
-room6 = {'northriddle' : riddle34, 'southriddle' : riddle45, 'westriddle' : riddle39, 'eastriddle' : riddle40}
-room7 = {'northriddle' : riddle35, 'southriddle' : riddle46, 'westriddle' : riddle40, 'eastriddle' : riddle41}
-room8 = {'northriddle' : riddle36, 'southriddle' : riddle47, 'westriddle' : riddle41, 'eastriddle' : riddle42}
-room9 = {'northriddle' : riddle37, 'southriddle' : riddle48, 'westriddle' : riddle42, 'eastriddle' : riddle43}
-room10 = {'northriddle' : riddle38, 'southriddle' : riddle49, 'westriddle' : riddle43, 'eastriddle' : riddle44}
-room11 = {'northriddle' : riddle23, 'southriddle' : riddle34, 'westriddle' : riddle28, 'eastriddle' : riddle29}
-room12 = {'northriddle' : riddle24, 'southriddle' : riddle35, 'westriddle' : riddle29, 'eastriddle' : riddle30}
-room13 = {'northriddle' : riddle25, 'southriddle' : riddle36, 'westriddle' : riddle30, 'eastriddle' : riddle31}
-room14 = {'northriddle' : riddle26, 'southriddle' : riddle37, 'westriddle' : riddle31, 'eastriddle' : riddle32}
-room15 = {'northriddle' : riddle27, 'southriddle' : riddle38, 'westriddle' : riddle32, 'eastriddle' : riddle33}
-room16 = {'northriddle' : riddle12, 'southriddle' : riddle23, 'westriddle' : riddle17, 'eastriddle' : riddle18}
-room17 = {'northriddle' : riddle13, 'southriddle' : riddle24, 'westriddle' : riddle18, 'eastriddle' : riddle19}
-room18 = {'northriddle' : riddle14, 'southriddle' : riddle25, 'westriddle' : riddle19, 'eastriddle' : riddle20}
-room19 = {'northriddle' : riddle15, 'southriddle' : riddle26, 'westriddle' : riddle20, 'eastriddle' : riddle21}
-room20 = {'northriddle' : riddle16, 'southriddle' : riddle27, 'westriddle' : riddle21, 'eastriddle' : riddle22}
-room21 = {'northriddle' : riddle1, 'southriddle' : riddle12, 'westriddle' : riddle6, 'eastriddle' : riddle7}
-room22 = {'northriddle' : riddle2, 'southriddle' : riddle13, 'westriddle' : riddle7, 'eastriddle' : riddle8}
-room23 = {'northriddle' : riddle3, 'southriddle' : riddle14, 'westriddle' : riddle8, 'eastriddle' : riddle9}
-room24 = {'northriddle' : riddle4, 'southriddle' : riddle15, 'westriddle' : riddle9, 'eastriddle' : riddle10}
-room25 = {'northriddle' : riddle5, 'southriddle' : riddle16, 'westriddle' : riddle10, 'eastriddle' : riddle11}
+#defining doors by riddle answer and status
+door1 = {'riddle' : riddle1 , 'answer' : answer1 , 'status' : 'locked'}
+door2 = {'riddle' : riddle2 , 'answer' : answer2 , 'status' : 'locked'}
+door3 = {'riddle' : riddle3 , 'answer' : answer3 , 'status' : 'locked'}
+door4 = {'riddle' : riddle4 , 'answer' : answer4 , 'status' : 'locked'}
+door5 = {'riddle' : riddle5 , 'answer' : answer5 , 'status' : 'locked'}
+door6 = {'riddle' : riddle6 , 'answer' : answer6 , 'status' : 'locked'}
+door7 = {'riddle' : riddle7 , 'answer' : answer7 , 'status' : 'locked'}
+door8 = {'riddle' : riddle8 , 'answer' : answer8 , 'status' : 'locked'}
+door9 = {'riddle' : riddle9 , 'answer' : answer9 , 'status' : 'locked'}
+door10 = {'riddle' : riddle10 , 'answer' : answer10 , 'status' : 'locked'}
+door11 = {'riddle' : riddle11 , 'answer' : answer11 , 'status' : 'locked'}
+door12 = {'riddle' : riddle12 , 'answer' : answer12 , 'status' : 'locked'}
+door13 = {'riddle' : riddle13 , 'answer' : answer13 , 'status' : 'locked'}
+door14 = {'riddle' : riddle14 , 'answer' : answer14 , 'status' : 'locked'}
+door15 = {'riddle' : riddle15 , 'answer' : answer15 , 'status' : 'locked'}
+door16 = {'riddle' : riddle16 , 'answer' : answer16 , 'status' : 'locked'}
+door17 = {'riddle' : riddle17 , 'answer' : answer17 , 'status' : 'locked'}
+door18 = {'riddle' : riddle18 , 'answer' : answer18 , 'status' : 'locked'}
+door19 = {'riddle' : riddle19 , 'answer' : answer19 , 'status' : 'locked'}
+door20 = {'riddle' : riddle20 , 'answer' : answer20 , 'status' : 'locked'}
+door21 = {'riddle' : riddle21 , 'answer' : answer21 , 'status' : 'locked'}
+door22 = {'riddle' : riddle22 , 'answer' : answer22 , 'status' : 'locked'}
+door23 = {'riddle' : riddle23 , 'answer' : answer23 , 'status' : 'locked'}
+door24 = {'riddle' : riddle24 , 'answer' : answer24 , 'status' : 'locked'}
+door25 = {'riddle' : riddle25 , 'answer' : answer25 , 'status' : 'locked'}
+door26 = {'riddle' : riddle26 , 'answer' : answer26 , 'status' : 'locked'}
+door27 = {'riddle' : riddle27 , 'answer' : answer27 , 'status' : 'locked'}
+door28 = {'riddle' : riddle28 , 'answer' : answer28 , 'status' : 'locked'}
+door29 = {'riddle' : riddle29 , 'answer' : answer29 , 'status' : 'locked'}
+door30 = {'riddle' : riddle30 , 'answer' : answer30 , 'status' : 'locked'}
+door31 = {'riddle' : riddle31 , 'answer' : answer31 , 'status' : 'locked'}
+door32 = {'riddle' : riddle32 , 'answer' : answer32 , 'status' : 'locked'}
+door33 = {'riddle' : riddle33 , 'answer' : answer33 , 'status' : 'locked'}
+door34 = {'riddle' : riddle34 , 'answer' : answer34 , 'status' : 'locked'}
+door35 = {'riddle' : riddle35 , 'answer' : answer35 , 'status' : 'locked'}
+door36 = {'riddle' : riddle36 , 'answer' : answer36 , 'status' : 'locked'}
+door37 = {'riddle' : riddle37 , 'answer' : answer37 , 'status' : 'locked'}
+door38 = {'riddle' : riddle38 , 'answer' : answer38 , 'status' : 'locked'}
+door39 = {'riddle' : riddle39 , 'answer' : answer39 , 'status' : 'locked'}
+door40 = {'riddle' : riddle40 , 'answer' : answer40 , 'status' : 'locked'}
+door41 = {'riddle' : riddle41 , 'answer' : answer41 , 'status' : 'locked'}
+door42 = {'riddle' : riddle42 , 'answer' : answer42 , 'status' : 'locked'}
+door43 = {'riddle' : riddle43 , 'answer' : answer43 , 'status' : 'locked'}
+door44 = {'riddle' : riddle44 , 'answer' : answer44 , 'status' : 'locked'}
+door45 = {'riddle' : riddle45 , 'answer' : answer45 , 'status' : 'locked'}
+door46 = {'riddle' : riddle46 , 'answer' : answer46 , 'status' : 'locked'}
+door47 = {'riddle' : riddle47 , 'answer' : answer47 , 'status' : 'locked'}
+door48 = {'riddle' : riddle48 , 'answer' : answer48 , 'status' : 'locked'}
+door49 = {'riddle' : riddle49 , 'answer' : answer49 , 'status' : 'locked'}
+door50 = {'riddle' : riddle50 , 'answer' : answer50 , 'status' : 'locked'}
+door51 = {'riddle' : riddle51 , 'answer' : answer51 , 'status' : 'locked'}
+door52 = {'riddle' : riddle52 , 'answer' : answer52 , 'status' : 'locked'}
+door53 = {'riddle' : riddle53 , 'answer' : answer53 , 'status' : 'locked'}
+door54 = {'riddle' : riddle54 , 'answer' : answer54 , 'status' : 'locked'}
+door55 = {'riddle' : riddle55 , 'answer' : answer55 , 'status' : 'locked'}
+door56 = {'riddle' : riddle56 , 'answer' : answer56 , 'status' : 'locked'}
+door57 = {'riddle' : riddle57 , 'answer' : answer57 , 'status' : 'locked'}
+door58 = {'riddle' : riddle58 , 'answer' : answer58 , 'status' : 'locked'}
+door59 = {'riddle' : riddle59 , 'answer' : answer59 , 'status' : 'locked'}
+door60 = {'riddle' : riddle60 , 'answer' : answer60 , 'status' : 'locked'}
+
+
+#defining rooms by the doors and corresponding riddle
+room1 = {'north' : riddle45, 'south' : riddle56, 'west' : riddle50, 'east' : riddle51}
+room2 = {'north' : riddle46, 'south' : riddle57, 'west' : riddle51, 'east' : riddle52}
+room3 = {'north' : riddle47, 'south' : riddle58, 'west' : riddle52, 'east' : riddle53}
+room4 = {'north' : riddle48, 'south' : riddle59, 'west' : riddle53, 'east' : riddle54}
+room5 = {'north' : riddle49, 'south' : riddle60, 'west' : riddle54, 'east' : riddle55}
+room6 = {'north' : riddle34, 'south' : riddle45, 'west' : riddle39, 'east' : riddle40}
+room7 = {'north' : riddle35, 'south' : riddle46, 'west' : riddle40, 'east' : riddle41}
+room8 = {'north' : riddle36, 'south' : riddle47, 'west' : riddle41, 'east' : riddle42}
+room9 = {'north' : riddle37, 'south' : riddle48, 'west' : riddle42, 'east' : riddle43}
+room10 = {'north' : riddle38, 'south' : riddle49, 'west' : riddle43, 'east' : riddle44}
+room11 = {'north' : riddle23, 'south' : riddle34, 'west' : riddle28, 'east' : riddle29}
+room12 = {'north' : riddle24, 'south' : riddle35, 'west' : riddle29, 'east' : riddle30}
+room13 = {'north' : riddle25, 'south' : riddle36, 'west' : riddle30, 'east' : riddle31}
+room14 = {'north' : riddle26, 'south' : riddle37, 'west' : riddle31, 'east' : riddle32}
+room15 = {'north' : riddle27, 'south' : riddle38, 'west' : riddle32, 'east' : riddle33}
+room16 = {'north' : riddle12, 'south' : riddle23, 'west' : riddle17, 'east' : riddle18}
+room17 = {'north' : riddle13, 'south' : riddle24, 'west' : riddle18, 'east' : riddle19}
+room18 = {'north' : riddle14, 'south' : riddle25, 'west' : riddle19, 'east' : riddle20}
+room19 = {'north' : riddle15, 'south' : riddle26, 'west' : riddle20, 'east' : riddle21}
+room20 = {'north' : riddle16, 'south' : riddle27, 'west' : riddle21, 'east' : riddle22}
+room21 = {'north' : riddle1, 'south' : riddle12, 'west' : riddle6, 'east' : riddle7}
+room22 = {'north' : riddle2, 'south' : riddle13, 'west' : riddle7, 'east' : riddle8}
+room23 = {'north' : riddle3, 'south' : riddle14, 'west' : riddle8, 'east' : riddle9}
+room24 = {'north' : riddle4, 'south' : riddle15, 'west' : riddle9, 'east' : riddle10}
+room25 = {'north' : riddle5, 'south' : riddle16, 'west' : riddle10, 'east' : riddle11}
+
+
+
+#defining character and original location
+room = 1
+name = input('What is your name? ')
+class Characters(object):
+    def __init__(self, name, room):
+        self.name = name
+        self.room = room
+character = Characters(name,room)
+
+
+westendriddles = [riddle6, riddle17, riddle28, riddle39, riddle50]
+eastendriddles = [riddle11, riddle22, riddle33, riddle44, riddle55]
+southendriddles = [riddle1, riddle2, riddle3, riddle4, riddle5]
+northendriddles = [riddle56, riddle57, riddle58, riddle59, riddle60]
+
+
+def riddle_quiz(motion):
+    x=1
+    current_door = character.room[motion]
+    current_riddle = current_door['riddle']
+    response = input(f"{current_riddle}").lower()
+    while True:
+        if response == current_door['answer']:
+            print("Correct. This door is now unlocked.")
+            current_door['status'] = 'unlocked'
+            break
+        elif x>=3:
+            print("This door is now locked forever.")
+            current_door['status'] = 'permanently locked'
+            break
+        else:
+            print(f"Incorrect. You now have {3-x} tries before this door is locked forever.")
+            response = input(f"{current_riddle}").lower()
+            x += 1
+
+
+def through_door():
+    motion = input("Would you like to enter the door to the north, south, east, or west? ").lower()
+    current_door = character.room[motion]
+    if motion == 'north':
+        riddle_quiz(motion)
+        if current_door['status'] == 'unlocked':
+            if current_door['riddle'] not in northendriddles:
+                character.room += 5
+                print(f"{character.name} is now in room {character.room}")
+            if current_door['riddle'] in northendriddles:
+                character.room -= 20
+                print(f"{character.name} is now in room {character.room}")
+        if current_door == 'permanently locked':
+            print('You may not use this door. It is locked forever.')
+    elif motion == 'south':
+        riddle_quiz(motion)
+        if current_door['status'] == 'unlocked':
+            if current_door['riddle'] not in southendriddles:
+                character.room -= 5
+                print(f"{character.name} is now in room {character.room}")
+            if current_door['riddle'] in southendriddles:
+                character.room += 20
+                print(f"{character.name} is now in room {character.room}")
+        if current_door == 'permanently locked':
+            print('You may not use this door. It is locked forever.')
+    elif motion == 'east':
+        riddle_quiz(motion)
+        if current_door['status'] == 'unlocked':
+            if current_door['riddle'] not in eastendriddles:
+                character.room += 1
+                print(f"{character.name} is now in room {character.room}")
+            if current_door['riddle'] in eastendriddles:
+                character.room -= 4
+                print(f"{character.name} is now in room {character.room}")
+        if current_door == 'permanently locked':
+            print('You may not use this door. It is locked forever.')
+    elif motion == 'west':
+        riddle_quiz(motion)
+        if current_door['status'] == 'unlocked':
+            if current_door['riddle'] not in westendriddles:
+                character.room -= 1
+                print(f"{character.name} is now in room {character.room}")
+            if current_door['riddle'] in westendriddles:
+                character.room += 4
+                print(f"{character.name} is now in room {character.room}")
+        if current_door == 'permanently locked':
+            print('You may not use this door. It is locked forever.')
+    else:
+        print("Sorry, that is not an option.")
+        print(through_door())
+
+while True:
+    through_door()
+
+
+
+
+
+
 
 
 

@@ -7,20 +7,31 @@ d. sinxcos2y
 
 answer1 = 'b'
 
+door1 = {'riddle' : riddle1 , 'answer' : answer1 , 'status' : 'locked'}
+
 #MAKE THIS GENERALIZED DUMBASS
 
-def riddle_quiz(riddle):
+current_riddle = character.room[motion]['riddle']
+
+
+
+
+def riddle_quiz():
     x=1
-    response = input(f"{riddle}").lower()
+    response = input(f"{current_riddle}").lower()
     while True:
-        if response == answer1:
+        if response == current_door['answer']:
             print("Correct. This door is now unlocked.")
+            current_door['status'] = 'unlocked'
             break
         elif x>=3:
             print("This door is now locked forever.")
-            # INSERT SOMETHING THAT LOCKS THE DOOR DUMBASS
+            current_door['status'] = 'permanently locked'
             break
         else:
             print(f"Incorrect. You now have {3-x} tries before this door is locked forever.")
-            response = input(f"{riddle1}").lower()
+            response = input(f"{current_riddle}").lower()
             x += 1
+
+riddle_quiz()
+print(current_door)
