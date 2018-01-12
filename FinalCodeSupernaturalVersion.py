@@ -148,7 +148,7 @@ class Supernatural(object):
         """
         self.answer19 = 'b'
 
-        self.riddle20 = """Sam and Dean eed phoenix ash to kill which supernatural creature?
+        self.riddle20 = """Sam and Dean need phoenix ash to kill which supernatural creature?
         a. Eve
         b. Samuel Colt
         c. Meg
@@ -813,9 +813,9 @@ class Math(object):
         b. 14
         c. 15
         d. 16"""
-        answer48 = 'c'
+        self.answer48 = 'c'
 
-        riddle49 = """Last year 100 adult cats, half of whom were female, were brought into the Smallville Animal Shelter. Half of the adult female cats were accompanied by a litter of kittens. The average number of kittens per litter was 4. What was the total number of cats and kittens received by the shelter last year?
+        self.riddle49 = """Last year 100 adult cats, half of whom were female, were brought into the Smallville Animal Shelter. Half of the adult female cats were accompanied by a litter of kittens. The average number of kittens per litter was 4. What was the total number of cats and kittens received by the shelter last year?
         a. 150
         b. 200
         c. 250
@@ -899,7 +899,7 @@ class Math(object):
         d. 12"""
         self.answer60 = 'b'
 
-a = input("Welcome to Ash's super amazing junior year final programming project! Before I explain to you the rules of the game, would you prefer to be asked questions about : Supernatural (the TV show), Math, or Sherlock (the TV show)? ")
+a = input("Welcome to Ash's super amazing junior year final programming project! Before I explain to you the rules of the game, would you prefer to be asked questions about : Supernatural (the TV show), Math, or Sherlock (the TV show)? ").lower()
 print(f"{a}? Awesome. Get ready for some great questions about {a}.")
 directions = """You have just been dropped into the 5x5 grid of rooms pictured below, in order to escape you need to find the randomly assigned door that allows you to flee.
 Each room has 4 doors, labeled north, south, east, and west, and besides the escape door, each door will lead you to the next room.
@@ -920,14 +920,15 @@ Good luck!
 --------------------------"""
 print(directions)
 
-if a == 'Supernatural' :
+if a == 'supernatural' :
     s = Supernatural()
-elif a == 'Sherlock' :
+elif a == 'sherlock' :
     s = Sherlock()
-elif a == 'Math' :
+elif a == 'math' :
     s = Math()
 
 #defining doors by riddle answer and status
+
 door1 = {'riddle' : s.riddle1 , 'answer' : s.answer1 , 'status' : 'locked'}
 door2 = {'riddle' : s.riddle2 , 'answer' : s.answer2 , 'status' : 'locked'}
 door3 = {'riddle' : s.riddle3 , 'answer' : s.answer3 , 'status' : 'locked'}
@@ -1018,7 +1019,9 @@ room23 = {'north' : door4, 'south' : door15, 'west' : door9, 'east' : door10}
 room24 = {'north' : door5, 'south' : door16, 'west' : door10, 'east' : door11}
 
 #defining list of all rooms
+
 rooms = [room0, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24]
+doors = [door1, door2, door3, door4, door5, door6, door7, door8, door9, door10, door11, door12, door13, door14, door15, door16, door17, door18, door19, door20, door21, door22, door23, door24, door25, door26, door27, door28, door29, door30, door31, door32, door33, door34, door35, door36, door37, door38, door39, door40, door41, door42, door43, door44, door45, door46, door47, door48, door49, door50, door51, door52, door53, door54, door55, door56, door57, door58, door59, door60]
 roomcounter = 0
 
 #defining character and original location
@@ -1036,7 +1039,22 @@ westendriddles = [s.riddle11, s.riddle22, s.riddle33, s.riddle44, s.riddle55]
 northendriddles = [s.riddle1, s.riddle2, s.riddle3, s.riddle4, s.riddle5]
 southendriddles = [s.riddle56, s.riddle57, s.riddle58, s.riddle59, s.riddle60]
 
+import random
+escape_door = random.randrange(1,50)
 
+#defining how to win the game
+def escape_room_code(motion):
+    print("Congratulations! You have found the final door, after probably wandering around aimlessly and wasting your afternoon. This is the final question. If you get this question wrong, you lose, and the time spent playing this spectacular program that definitely deserves a 100% will truly be wasted. Good luck; you only have one try.")
+    current_door = rooms[roomcounter][motion]
+    current_riddle = rooms[roomcounter][motion]['riddle']
+    response = input(f"{current_riddle}").lower()
+    if response == current_door['answer']:
+            print("CONGRATULATIONS! YOU BEAT THE GAME. WONDERFUL JOB.")
+    else:
+        print("Wow, really. The last question and you manage to get it wrong. I am a little disappointed. Now you can either play again or go and thing about what you've done.")
+        print("YOU LOSE.")
+
+#defining 3 chances to get answer correct
 def riddle_quiz(motion):
     x=1
     current_door = rooms[roomcounter][motion]
@@ -1057,11 +1075,18 @@ def riddle_quiz(motion):
             x += 1
 
 
+
 def through_door():
     global roomcounter
     while True:
         motion = input("Would you like to enter the door to the north, south, east, or west? ").lower()
+        while motion not in ['north', 'south', 'east', 'west']:
+            motion = input("Sorry, that is not an option. Would you like to enter the door to the north, south, east, or west? ").lower()
         current_door = rooms[roomcounter][motion]
+        if current_door == doors[escape_door]:
+            print('you found the escape door')
+            escape_room_code(motion)
+            break
         if motion == 'north':
             if current_door['status'] == 'locked':
                 riddle_quiz(motion)
@@ -1112,7 +1137,7 @@ def through_door():
                 print('You may not use this door. It is locked forever.')
         else:
             print("Sorry, that is not an option.")
-            print(through_door())
+
 
 
 through_door()
