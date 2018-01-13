@@ -900,11 +900,28 @@ class Math(object):
         self.answer60 = 'b'
 
 a = input("Welcome to Ash's super amazing junior year final programming project! Before I explain to you the rules of the game, would you prefer to be asked questions about : Supernatural (the TV show), Math, or Sherlock (the TV show)? ").lower()
+
+while True:
+    if a == 'supernatural' :
+        s = Supernatural()
+        break
+    elif a == 'sherlock' :
+        s = Sherlock()
+        break
+    elif a == 'math' :
+        s = Math()
+        break
+    else:
+        a = input("That is not an option. Choose again. ").lower()
+
 print(f"{a}? Awesome. Get ready for some great questions about {a}.")
 directions = """You have just been dropped into the 5x5 grid of rooms pictured below, in order to escape you need to find the randomly assigned door that allows you to flee.
-Each room has 4 doors, labeled north, south, east, and west, and besides the escape door, each door will lead you to the next room.
+This Escape Door is the key to winning the game. Enter the Escape Door, answer the question correctly, and you win.
+Each room has 4 doors: north, south, east, and west, which will lead you to the next room.
 In order to get through the door, however, you will need to answer a question about the topic you just chose.
 You will have 3 attempts to answer this question or the door will be locked forever.
+If you try to go through a door at the end of the column or row, you will be brough to the other side of that same row or column.
+For example, if you try the go north when you are in room 20, you will end up back in room 0/
 If you lock the escape door, you LOSE.
 Good luck!
 --------------------------
@@ -920,12 +937,7 @@ Good luck!
 --------------------------"""
 print(directions)
 
-if a == 'supernatural' :
-    s = Supernatural()
-elif a == 'sherlock' :
-    s = Sherlock()
-elif a == 'math' :
-    s = Math()
+
 
 #defining doors by riddle answer and status
 
