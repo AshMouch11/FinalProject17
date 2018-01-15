@@ -22,9 +22,9 @@ class Sherlock(object):
         """
         self.answer3 = 'd'
         self.riddle4 = """What was the name of the first episode of season 1 of Sherlock?
-        a.
-        b.
-        c.
+        a. The Final Problem
+        b. The Blind Banker
+        c. The Great Game
         d. A Study in Pink
         """
         self.answer4 = 'd'
@@ -188,7 +188,7 @@ class Sherlock(object):
         """
         self.answer24 = 'd'
 
-        self.riddle25 = """What is the surname of the man that introduces John Watson to Sherlock
+        self.riddle25 = """What is the surname of the man that introduces John Watson to Sherlock?
         a. Lestrade
         b. Stamford
         c. Moriarty
@@ -228,11 +228,11 @@ class Sherlock(object):
         """
         self.answer29 = 'c'
 
-        self.riddle30 = """
-        a.
-        b.
-        c.
-        d.
+        self.riddle30 = """Who else was on the roof when Sherlock jumped from it?
+        a. Irene Adler
+        b. Watson
+        c. Moriarty
+        d. Mycroft
         """
         self.answer30 = 'c'
 
@@ -372,27 +372,27 @@ class Sherlock(object):
         """
         self.answer47 = 'd'
 
-        self.riddle48 = """
-        a.
-        b.
-        c.
-        d.
+        self.riddle48 = """When Sherlock and Victor played pirates as a child, what was Sherlock's nickname?
+        a. Blackbeard
+        b. Bluebeard
+        c. Yellowbeard
+        d. Redbeard
         """
         self.answer48 = 'c'
 
-        self.riddle49 = """
-        a.
-        b.
-        c.
-        d.
+        self.riddle49 = """Where was the little girl trapped during the episode 'The Final Problem.'
+        a. a well
+        b. an airplane
+        c. a train
+        d. a car
         """
         self.answer49 = 'b'
 
         self.riddle50 = """Which of the following was a place that Moriarty did not break into?
-        a.
-        b.
-        c.
-        d.
+        a. Bank of England
+        b. Pentonville Prison
+        c. Buckingham Palace
+        d. The Tower of London
         """
         self.answer50 = 'c'
 
@@ -404,11 +404,11 @@ class Sherlock(object):
         """
         self.answer51 = 'c'
 
-        self.riddle52 = """
-        a.
-        b.
-        c.
-        d.
+        self.riddle52 = """Where did the HOUND operation take place?
+        a. Sheffield, England
+        b. Lawrence, Kansas
+        c. Liberty, Indiana
+        d. 221B Baker Street
         """
         self.answer52 = 'c'
 
