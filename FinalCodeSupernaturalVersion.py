@@ -1377,7 +1377,332 @@ class Sherlock(object):
         """
         self.answer60 = 'b'
 
-
+spot0 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|  x |    |    |    |    |
+--------------------------
+"""
+spot1 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |  x |    |    |    |
+--------------------------
+"""
+spot2 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |  x |    |    |
+--------------------------
+"""
+spot3 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |  x |    |
+--------------------------
+"""
+spot4 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |  x |
+--------------------------
+"""
+spot5 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+| x  |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot6 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |  x |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot7 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |  x |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot8 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |  x |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot9 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |  x |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot10 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|  x |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot11 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |  x |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot12 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |  x |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot13 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |  x |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot14 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |  x |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot15 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|  x |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot16 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |  x |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot17 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |  x |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot18 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |  x |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot19 = """
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |  x |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot20 = """
+--------------------------
+|  x |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot21 = """
+--------------------------
+|    |  x |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot22 = """
+--------------------------
+|    |    |  x |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot23 = """
+--------------------------
+|    |    |    |  x |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spot24 = """
+--------------------------
+|    |    |    |    |  x |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+|    |    |    |    |    |
+--------------------------
+"""
+spots = [spot0, spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, spot10, spot11, spot12, spot13, spot14, spot15, spot16, spot17, spot18, spot19, spot20, spot21, spot22, spot23, spot24,]
 
 
 a = input("Welcome to Ash's super amazing junior year final programming project! Before I explain to you the rules of the game, would you prefer to be asked questions about : Supernatural (the TV show), Math, or Sherlock (the TV show)? ").lower()
@@ -1393,7 +1718,7 @@ while True:
         s = Math()
         break
     else:
-        a = input("That is not an option. Choose again. ").lower()
+        a = input("Really? You're already trying to break my code; that's not an option. Choose again. ").lower()
 
 print(f"{a}? Awesome. Get ready for some great questions about {a}.")
 directions = """You have just been dropped into the 5x5 grid of rooms pictured below, in order to escape you need to find the randomly assigned door that allows you to flee.
@@ -1402,7 +1727,7 @@ Each room has 4 doors: north, south, east, and west, which will lead you to the 
 In order to get through the door, however, you will need to answer a question about the topic you just chose.
 You will have 3 attempts to answer this question or the door will be locked forever.
 If you try to go through a door at the end of the column or row, you will be brough to the other side of that same row or column.
-For example, if you try the go north when you are in room 20, you will end up back in room 0/
+For example, if you try the go north when you are in room 20, you will end up back in room 0.
 If you lock the escape door, you LOSE.
 Good luck!
 --------------------------
@@ -1527,8 +1852,8 @@ class Characters(object):
 character = Characters(name,room)
 
 
-eastendriddles = [s.riddle6, s.riddle17, s.riddle28, s.riddle39, s.riddle50]
-westendriddles = [s.riddle11, s.riddle22, s.riddle33, s.riddle44, s.riddle55]
+westendriddles = [s.riddle6, s.riddle17, s.riddle28, s.riddle39, s.riddle50]
+eastendriddles = [s.riddle11, s.riddle22, s.riddle33, s.riddle44, s.riddle55]
 northendriddles = [s.riddle1, s.riddle2, s.riddle3, s.riddle4, s.riddle5]
 southendriddles = [s.riddle56, s.riddle57, s.riddle58, s.riddle59, s.riddle60]
 
@@ -1586,10 +1911,10 @@ def through_door():
             if current_door['status'] == 'unlocked':
                 if current_door['riddle'] not in northendriddles:
                     roomcounter += 5
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
                 if current_door['riddle'] in northendriddles:
                     roomcounter -= 20
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
             if current_door == 'permanently locked':
                 print('You may not use this door. It is locked forever.')
         elif motion == 'south':
@@ -1598,10 +1923,10 @@ def through_door():
             if current_door['status'] == 'unlocked':
                 if current_door['riddle'] not in southendriddles:
                     roomcounter -= 5
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
                 if current_door['riddle'] in southendriddles:
                     roomcounter += 20
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
             if current_door == 'permanently locked':
                 print('You may not use this door. It is locked forever.')
         elif motion == 'east':
@@ -1610,10 +1935,10 @@ def through_door():
             if current_door['status'] == 'unlocked':
                 if current_door['riddle'] not in eastendriddles:
                     roomcounter += 1
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
                 if current_door['riddle'] in eastendriddles:
                     roomcounter -= 4
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
             if current_door == 'permanently locked':
                 print('You may not use this door. It is locked forever.')
         elif motion == 'west':
@@ -1622,10 +1947,10 @@ def through_door():
             if current_door['status'] == 'unlocked':
                 if current_door['riddle'] not in westendriddles:
                     roomcounter -= 1
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
                 if current_door['riddle'] in westendriddles:
                     roomcounter += 4
-                    print(f"{character.name} is now in room {roomcounter}.")
+                    print(f"{character.name} is here:{spots[roomcounter]}")
             if current_door == 'permanently locked':
                 print('You may not use this door. It is locked forever.')
         else:
@@ -1634,11 +1959,4 @@ def through_door():
 
 
 through_door()
-
-
-
-
-
-
-
 
