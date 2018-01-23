@@ -1709,6 +1709,7 @@ spots = [spot0, spot1, spot2, spot3, spot4, spot5, spot6, spot7, spot8, spot9, s
 #initial directions and asking user for preferred version
 a = input("Welcome to Ash's super amazing junior year final programming project! Before I explain to you the rules of the game, would you prefer to be asked questions about : Supernatural (the TV show), Math, or Sherlock (the TV show)? ").lower()
 
+#call class for user prefered version
 while True:
     if a == 'supernatural' :
         s = Supernatural()
